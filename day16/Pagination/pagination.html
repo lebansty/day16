@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  #nav {
+    background-color: cadetblue;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 35px;
+    color: azure;
+    text-shadow: 2px 2px black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+
+  #pagi {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: cadetblue;
+    padding-top: 10px;
+
+  }
+</style>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+<body>
+  <div id="nav">
+    Pagination
+  </div>
+
+  <div class="container-fluid  mb-3 mt-4">
+
+    <table class="table table-striped mx-5" id="userTable">
+      <thead>
+        <tr>
+          <th scope="col">Id</th>
+          <th scope="col">Name</th>
+          <th scope="col">Email</th>
+
+        </tr>
+      </thead>
+      <tbody class="tablebody">
+
+
+      </tbody>
+    </table>
+
+
+    <nav class="mt-5" aria-label="Page navigation example" id="pagi">
+      <ul class="pagination">
+
+        <li class="page-item"><a class="page-link" id="btn_1" onclick="pg1(this)" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" id="btn_2" onclick="pg2(this)" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" id="btn_3" onclick="pg3(this)" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" id="btn_4" onclick="pg4(this)" href="#">4</a></li>
+        <li class="page-item"><a class="page-link" id="btn_5" onclick="pg5(this)" href="#">5</a></li>
+        <li class="page-item"><a class="page-link" id="btn_6" onclick="pg6(this)" href="#">6</a></li>
+        <li class="page-item"><a class="page-link" id="btn_7" onclick="pg7(this)" href="#">7</a></li>
+        <li class="page-item"><a class="page-link" id="btn_8" onclick="pg8(this)" href="#">8</a></li>
+        <li class="page-item"><a class="page-link" id="btn_9" onclick="pg9(this)" href="#">9</a></li>
+        <li class="page-item"><a class="page-link" id="btn_10" onclick="pg10(this)" href="#">10</a></li>
+
+      </ul>
+    </nav>
+  </div>
+
+  </div>
+
+  <script src="script.js"></script>
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
